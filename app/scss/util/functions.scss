@@ -4,3 +4,12 @@
 @function rem($pixels, $context: 16) {
 	@return (math.div($pixels, $context)) * 1rem;
 }
+
+.dflex {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}

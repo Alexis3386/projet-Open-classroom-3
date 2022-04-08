@@ -1,5 +1,9 @@
 @use '../util' as *;
 
+html, body {
+	height: 100%;
+}
+
 .container {
 	padding: 0 rem(24);
 	max-width: rem(1110);
@@ -8,5 +12,97 @@
 	@include breakpoint(large) {
 		padding: 0;
 		transform: translate(0, 0);
+	}
+}
+
+header {
+	padding: 2rem 1.5rem;
+}
+
+.nav-bar {
+	width: 95vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.nav-bar-left {
+		display: flex;
+		align-items: center;
+	}
+	& ul {
+		display: flex;
+		& li {
+			text-decoration: none;
+			list-style: none;
+			margin: 0 0.7rem;
+			padding: 1rem 0;
+			& a {
+				text-transform: uppercase;
+			}
+		}
+	}
+	.logo img {
+		width: auto;
+		height: 140px;
+	}
+}
+
+.actualites {
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* section actualités */
+.actu-cards {
+	display: flex;
+	justify-content: space-between;
+	& .card {
+		overflow: hidden;
+		margin-right: 1rem;
+		width: 400px;
+		border: 1px solid #a9a9a9;
+		& img {
+			width: 400px ;
+			height: 250px;
+		}
+		& .card-text {
+			padding: 1rem;
+			& p {
+				line-height: 1.6rem;
+			}
+		}
+		& .card-title {
+			margin-top: 1rem;
+		}
+	}
+}
+
+/* section qui somme nous */
+.who {
+	height: 490px;
+	margin: 4rem auto;
+	display: flex;
+	& > div {
+		width: 50%;
+	}
+	& .who-img {
+		background-image: url("./images/groupe-personnes-au-cinema_23-2148115428.webp");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	& .who-text {
+		padding: 1.5rem;
+		height: 100%;
+	}
+}
+
+/* section nos partenaires */
+.partner {
+	width: 1140px;
+	margin: auto;
+	& .partner-title {
+		text-align: center;
 	}
 }

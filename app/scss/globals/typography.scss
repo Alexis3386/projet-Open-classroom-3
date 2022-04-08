@@ -12,3 +12,83 @@ a:visited,
 a:active {
 	text-decoration: none;
 }
+a:hover {
+	color: #4ea1ca;
+}
+
+.image-hero {
+	& div {
+		& h2 {
+			color: white
+		}
+	}
+}
+
+.logo-text {
+	& p {
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1.6rem;
+	}
+
+}
+
+.actualites {
+	& .actu-text {
+		& h2 {
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 300;
+			color: #313131;
+			font-size: 2.5rem;
+			&.light {
+				font-weight: 100;
+			}
+			&.border::after {
+				content: '';
+				width: 85%;
+				height: 1px;
+				background-color: #313131;
+				display: inline-block;
+			}
+		}
+	}
+
+	& .card {
+		& .card-title {
+			text-transform: uppercase;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.who {
+	& .who-text {
+		h2 {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 2.5rem;
+			font-weight: 300;
+			&:after {
+				content: '';
+				width: 20%;
+				background-color: white;
+				height: 1px;
+				display: inline-block;
+			}
+		}
+
+		p {
+			line-height: 1.8rem;
+		}
+	}
+}
+
+.partner {
+	& .partner-title {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+}
