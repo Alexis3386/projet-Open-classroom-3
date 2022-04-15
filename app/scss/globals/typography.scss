@@ -18,8 +18,11 @@ a:hover {
 
 .image-hero {
 	& div {
-		& h2 {
-			color: white
+		& h1 {
+			color: white;
+			font-size: 3rem;
+			font-weight: 400;
+			line-height: 4rem;
 		}
 	}
 }
@@ -85,10 +88,19 @@ a:hover {
 	}
 }
 
-.partner {
-	& .partner-title {
-		font-size: 2.5rem;
-		text-transform: uppercase;
-		font-weight: 300;
+h2.title {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.container-affiche h2 {
+	color: white;
+	&::after {
+		content: "";
+		width: 20%;
+		height: 1px;
+		display: inline-block;
+		background-color: white;
 	}
 }

@@ -102,7 +102,19 @@ header {
 .partner {
 	width: 1140px;
 	margin: auto;
-	& .partner-title {
-		text-align: center;
-	}
+}
+
+/* */
+.affiche {
+	background-color: #1D2327;
+	margin: 4rem 0
+}
+
+.container-affiche {
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	width: 90vw;
+	margin: auto;
+	justify-content: space-between;
 }

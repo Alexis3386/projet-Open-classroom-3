@@ -11,7 +11,7 @@ const browsersync = require('browser-sync').create();
 
 // Sass Task
 function scssTask() {
-	return src('app/scss/style.scss', { sourcemaps: true })
+	return src(['app/scss/style.scss', 'app/scss/owlcarrousel/owl.carousel.scss', 'app/scss/owlcarrousel/owl.theme.default.scss'], { sourcemaps: true })
 		.pipe(sass())
 		.pipe(postcss([autoprefixer(), cssnano()]))
 		.pipe(dest('dist', { sourcemaps: '.' }));
