@@ -1,0 +1,39 @@
+.footer {
+    background-color: #1D2327;
+    color: white;
+
+    & ul {
+        padding: 0;
+
+        & li {
+            list-style: none;
+            margin-bottom: 0.4rem;
+
+            & a {
+                color: white;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    & .icon-sociaux {
+        display: flex;
+        justify-content: space-around;
+
+        & i {
+            color: white !important;
+
+            &:hover {
+                color: #4EA1CA !important;
+            }
+        }
+    }
+
+    & .copyright {
+        background-color: black;
+        padding: 0.7rem;
+    }
+}

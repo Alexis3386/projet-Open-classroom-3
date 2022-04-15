@@ -8,4 +8,9 @@ nav {
    & .nav-bar-left {
        margin-left: 4rem;
    }
+   & .active {
+       & a {
+           color:#4EA1CA !important;
+       }
+   }
 }

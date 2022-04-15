@@ -104,3 +104,16 @@ h2.title {
 		background-color: white;
 	}
 }
+
+.footer {
+	& h2 {
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+}
+
+.movie {
+	& .movie-title {
+		margin-top: 1rem;
+	}
+}
