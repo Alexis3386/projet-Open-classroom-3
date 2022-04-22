@@ -74,18 +74,20 @@ a:hover {
 			font-size: 2.5rem;
 			font-weight: 300;
 			&:after {
-				content: '';
 				width: 20%;
-				background-color: white;
-				height: 1px;
-				display: inline-block;
 			}
 		}
-
 		p {
 			line-height: 1.8rem;
 		}
 	}
+}
+
+h2::after {
+	content: "";
+	background-color: white;
+	height: 1px;
+	display: inline-block;
 }
 
 h2.title {
@@ -99,9 +101,6 @@ h2.title {
 	&::after {
 		content: "";
 		width: 20%;
-		height: 1px;
-		display: inline-block;
-		background-color: white;
 	}
 }
 
@@ -115,5 +114,21 @@ h2.title {
 .movie {
 	& .movie-title {
 		margin-top: 1rem;
+	}
+}
+
+/* nous situer */
+.container-nous-situer {
+	& h2 {
+		display: inline-block;
+		&::after {
+			width: 20%;
+			background-color: #313131;
+		}
+	}
+	& .text-nous-situer {
+		& p {
+			line-height: 1.8rem;
+		}
 	}
 }

@@ -122,7 +122,7 @@ header {
 /* section nos partenaires */
 .partner {
 	width: 1140px;
-	margin: auto;
+	margin: 4rem auto;
 }
 
 /* */
@@ -153,17 +153,23 @@ header {
 .movie-container {
 	display: flex;
 	justify-content: space-between;
+	width: 60vw;
+	margin: auto;
+
 	& .movie {
 		width: 31%;
+
 		& img {
 			width: 100%;
 			height: auto;
 		}
 	}
+
 	& .movie {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		& p {
 			width: 330px;
 		}
@@ -172,9 +178,24 @@ header {
 
 .jour {
 	padding: 1rem;
-	width: 60vw;
 	margin: 2rem auto;
+
 	&.paire {
 		background-color: #ececec;
+	}
+}
+
+
+/* nous situer */
+.container-nous-situer {
+	width: 90vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	& .map-nous-situer {
+		width: 68%;
+	}
+	& .text-nous-situer {
+		width: 30%;
 	}
 }

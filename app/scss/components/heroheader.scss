@@ -4,6 +4,7 @@
   margin: auto;
   width: 94vw;
   height: 550px;
+
   .image-hero {
     position: absolute;
     top: -65px;
@@ -15,12 +16,14 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
     & .hero-text {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0);
     }
+
     & .hero-video {
       position: absolute;
       max-width: 400px;
@@ -33,15 +36,18 @@
       -o-transform: translateY(50%);
     }
   }
+
   & .icon-sociaux {
     position: absolute;
     z-index: 1;
     top: 50%;
     left: -20px;
     transform: translate3d(-50%, -80%, 0);
+
     & div {
       margin-bottom: 0.7rem;
     }
+
     & i {
       padding: 0.5rem;
       background-color: #197fad;
