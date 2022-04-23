@@ -12,4 +12,7 @@
 
 .owl-next, .owl-prev {
     color: white !important;
+    & span {
+        font-size: 2rem;
+    }
 }

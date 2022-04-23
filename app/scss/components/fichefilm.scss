@@ -1,0 +1,17 @@
+.info-movie {
+    & p {
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.synopsis-text {
+
+    line-height: 1.8rem;
+
+    & span {
+        display: block;
+        font-weight: bold;
+    }
+}

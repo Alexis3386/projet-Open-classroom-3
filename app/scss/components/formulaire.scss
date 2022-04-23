@@ -1,0 +1,15 @@
+.nous-contacter {
+    input , textarea {
+        width: 100%;
+        padding: 0.7rem 0.3rem;
+        margin: 1rem 0;
+        &[type="checkbox"] {
+            width: auto;
+            margin-right: 1rem;
+        }
+    }
+
+    input:focus::placeholder, textarea:focus::placeholder {
+        color: transparent;
+    }
+}

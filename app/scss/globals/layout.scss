@@ -192,10 +192,84 @@ header {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+
 	& .map-nous-situer {
 		width: 68%;
 	}
+
 	& .text-nous-situer {
 		width: 30%;
+	}
+}
+
+/* actualités */
+.actualites {
+	&.page-actu {
+		justify-content: center;
+		margin: 2.5rem auto;
+	}
+}
+
+/* contact */
+.nous-contacter {
+	width: 90vw;
+	margin: 2rem auto;
+	display: flex;
+	justify-content: center;
+
+	.form-container {
+		width: 50%;
+	}
+}
+
+/* fiche film */
+.info-movie {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+
+	img {
+		height: 400px;
+		width: auto;
+	}
+}
+
+.synopsis {
+	width: 100%;
+	margin: auto;
+}
+
+.bande-annonce {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	margin: 2rem auto;
+	padding: 1rem 1.5rem;
+}
+
+.fiche-container {
+	margin-top: calc(-65px + 2rem);
+}
+
+/* partenaire */
+.partner {
+	& .container {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.partner-container {
+	display: flex;
+	width: 60vw;
+	justify-content: space-between;
+	align-items: center;
+	div {
+		width: 20%;
 	}
 }
