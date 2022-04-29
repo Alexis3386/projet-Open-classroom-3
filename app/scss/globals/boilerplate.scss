@@ -13,3 +13,32 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.dflex {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
+}

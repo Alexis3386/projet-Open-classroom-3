@@ -59,23 +59,74 @@ header {
 	}
 }
 
+@media screen and (max-width: 648px) {
+	.nav-bar {
+		width: auto;
+		.nav-bar-left {
+			margin: 0;
+			.logo-text {
+				p {
+					line-height: normal;
+				}
+			}
+		}
+		ul {
+			display: none;
+		}
+	}
+
+	.hero-header {
+		& .hero-text {
+			width: 100%;
+			h1 {
+				text-align: center;
+			}
+		}
+	}
+
+	.container-affiche {
+		flex-direction: column;
+		.affiche-text {
+			margin-bottom: 2rem;
+			order: 0;
+			text-align: center;
+		}
+		.owl-carousel {
+			width: 86% !important;
+			order: 1;
+		}
+	}
+}
+
 .actualites {
 	width: 90vw;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+
+	@media screen and (max-width: 648px) {
+		flex-direction: column;
+	}
 }
 
 /* section actualités */
 .actu-cards {
 	display: flex;
 	justify-content: space-between;
+	@media screen and(max-width: 648px) {
+		flex-direction: column;
+	}
 
 	& .card {
 		overflow: hidden;
 		margin-right: 1rem;
 		width: 400px;
 		border: 1px solid #a9a9a9;
+		@media screen and(max-width: 648px) {
+			width: auto;
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
 
 		& img {
 			width: 400px;
