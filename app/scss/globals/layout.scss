@@ -62,14 +62,17 @@ header {
 @media screen and (max-width: 648px) {
 	.nav-bar {
 		width: auto;
+
 		.nav-bar-left {
 			margin: 0;
+
 			.logo-text {
 				p {
 					line-height: normal;
 				}
 			}
 		}
+
 		ul {
 			display: none;
 		}
@@ -78,6 +81,7 @@ header {
 	.hero-header {
 		& .hero-text {
 			width: 100%;
+
 			h1 {
 				text-align: center;
 			}
@@ -86,11 +90,13 @@ header {
 
 	.container-affiche {
 		flex-direction: column;
+
 		.affiche-text {
 			margin-bottom: 2rem;
 			order: 0;
 			text-align: center;
 		}
+
 		.owl-carousel {
 			width: 86% !important;
 			order: 1;
@@ -106,6 +112,10 @@ header {
 
 	@media screen and (max-width: 648px) {
 		flex-direction: column;
+		.actu-text {
+			text-align: center;
+			margin-bottom: 1rem;
+		}
 	}
 }
 
@@ -113,6 +123,7 @@ header {
 .actu-cards {
 	display: flex;
 	justify-content: space-between;
+
 	@media screen and(max-width: 648px) {
 		flex-direction: column;
 	}
@@ -122,6 +133,7 @@ header {
 		margin-right: 1rem;
 		width: 400px;
 		border: 1px solid #a9a9a9;
+
 		@media screen and(max-width: 648px) {
 			width: auto;
 			margin-right: 0;
@@ -152,9 +164,21 @@ header {
 	height: 490px;
 	margin: 4rem auto;
 	display: flex;
+	
 
 	&>div {
 		width: 50%;
+	}
+	@media screen and(max-width: 648px) {
+		flex-direction: column;
+		height: auto;
+		&>div {
+			width: auto;
+		}
+		& .who-img {
+			height: 400px;
+			order: 2;
+		}
 	}
 
 	& .who-img {
@@ -172,8 +196,36 @@ header {
 
 /* section nos partenaires */
 .partner {
+	@media screen and (max-width: 648px) {
+		width: auto;
+	}
 	width: 1140px;
 	margin: 4rem auto;
+	& .container {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.partner-container {
+	display: flex;
+	width: 60vw;
+	justify-content: space-between;
+	align-items: center;
+
+	div {
+		width: 20%;
+	}
+	@media screen and (max-width: 648px) {
+		width: auto;
+		flex-direction: column;
+		div {
+			width: 50%;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 /* */
@@ -197,6 +249,13 @@ header {
 		padding: 2rem 0;
 		display: flex;
 		justify-content: space-evenly;
+		@media screen and (max-width: 648px) {
+			flex-direction: column;
+			div {
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+		}
 	}
 }
 
@@ -225,6 +284,14 @@ header {
 			width: 330px;
 		}
 	}
+	@media screen and (max-width: 648px) {
+		flex-direction: column;
+		width: 90vw;
+		& .movie {
+			width: auto;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 .jour {
@@ -243,13 +310,24 @@ header {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-
+	@media screen and (max-width: 648px) {
+		flex-direction: column;
+	}
 	& .map-nous-situer {
 		width: 68%;
 	}
 
 	& .text-nous-situer {
 		width: 30%;
+	}
+	@media screen and (max-width: 648px) {
+		& .map-nous-situer {
+			width: 100%;
+		}
+		& .text-nous-situer {
+			width: 100%;
+			text-align: center;
+		}
 	}
 }
 
@@ -270,6 +348,9 @@ header {
 
 	.form-container {
 		width: 50%;
+		@media screen and (max-width: 648px) {
+			width: auto;
+		}
 	}
 }
 
@@ -289,6 +370,7 @@ header {
 .synopsis {
 	width: 100%;
 	margin: auto;
+	padding: 30px;
 }
 
 .bande-annonce {
@@ -297,30 +379,11 @@ header {
 }
 
 .container {
-	margin: 2rem auto;
+	margin: auto;
 	padding: 1rem 1.5rem;
 }
 
 .fiche-container {
 	margin-top: calc(-65px + 2rem);
-}
-
-/* partenaire */
-.partner {
-	& .container {
-		& img {
-			width: 100%;
-			height: auto;
-		}
-	}
-}
-
-.partner-container {
-	display: flex;
-	width: 60vw;
-	justify-content: space-between;
-	align-items: center;
-	div {
-		width: 20%;
-	}
+	margin-bottom: 2rem;
 }

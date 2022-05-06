@@ -1,4 +1,9 @@
 .info-movie {
+    @media screen and (max-width: 648px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
     & p {
         & span {
             font-weight: bold;
@@ -7,7 +12,6 @@
 }
 
 .synopsis-text {
-
     line-height: 1.8rem;
 
     & span {
